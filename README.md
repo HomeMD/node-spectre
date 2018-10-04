@@ -24,6 +24,16 @@ spectre
       })
 ```
 
+Connecting to a proxy with basic HTTP Authorization:
+
+```js
+  spectre.setProxyConnection({
+      type: 'Basic',  // this is the most common, but other HTTP Authentication types can be used
+      username: 'authUser',
+      password: 'authPass'
+  });
+```
+
 [WebdriverIO](https://webdriver.io) example:
 
 ```js
